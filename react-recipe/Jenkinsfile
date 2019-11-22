@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                bat 'npm install'
+                bat 'npm run build'
+            }
+        }
+        stage('Unit Test') {
+            steps {
+                bat 'npm run test' 
+                junit 'unit-tests/report/**/*.xml' 
+            }
+        }
+        stage('e2e Tests') {
+            steps {
+                echo 'e2e'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}

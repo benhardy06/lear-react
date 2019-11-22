@@ -1,0 +1,5 @@
+# Ignore
+learn-react/learn-react/node_modules/
+learn-redux/node_modules/
+react-recipe/node_modules/
+react-recipe-app/node_modules
