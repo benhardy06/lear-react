@@ -12,7 +12,7 @@
     "@babel/core": "^7.6.2",
     "@babel/polyfill": "^7.6.0",
     "babel-loader": "^8.0.6",
-    "karma": "^4.3.0",
+    "karma": "^6.4.1",
     "karma-webpack": "^4.0.2"
   },
   "devDependencies": {
